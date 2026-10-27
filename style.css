@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #ded895;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+#brand-vietcuong {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  z-index: 20;
+  font-family: 'JetBrains Mono', monospace, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(8, 228, 240, 0.5);
+  pointer-events: auto;
+}
+
+#fs {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 10px);
+  right: calc(env(safe-area-inset-right, 0px) + 10px);
+  width: 44px;
+  height: 44px;
+  border: 3px solid #2d2d3a;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #2d2d3a;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#fs:hover { background: #fff; }
